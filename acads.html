@@ -8,6 +8,22 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<link rel="stylesheet" href="assets/css/data.css" />
+	<link rel="stylesheet" href="assets/css/colorbox.css" />
+<style>
+		table tbody tr {
+			border: solid 1px #fff;
+			border-left: 0;
+			border-right: 0;
+		}
+
+			table tbody tr:nth-child(2n + 1) {
+				background-color: #fff;
+			}
+ a:hover span.icon {
+   
+cursor:pointer;
+}
+</style>
 	</head>
 	<body>
 		<div id="page-wrapper">
@@ -97,6 +113,26 @@
 <div class="box" id = "dept">
 						
 						<h3>Choosing your Department</h3>
+<br>
+
+<table style="text-align:center; background-color:#fff;" >
+<tr>
+<td><a class = "iframe" href="aero.html"><span class="icon major fa fa-space-shuttle accent2"></span><h3>Aerospace</h3></a></td>
+<td><a class = "iframe" href="chem.html"><span class="icon major fa fa-flask accent3"></span><h3>Chemistry</h3></a></td>
+<td><a class = "iframe" href="civil.html"><span class="icon major fa fa-building accent4"></span><h3>Civil</h3></a></td>
+<td><a class = "iframe" href="cse.html"><span class="icon major fa fa-laptop accent5"></span><h3>Computer Science</h3></a></td>
+<td><a class = "iframe" href="elec.html"><span class="icon major fa fa-signal accent2"></span><h3>Electrical</h3></a></td>
+</tr>
+
+<tr>
+<td><a class = "iframe" href="ep.html"><span class="icon major fa fa-gear accent2"></span><h3>Engineering Physics</h3></a></td>
+<td><a class = "iframe" href="energy.html"><span class="icon major fa fa-bolt accent5"></span><h3>Energy Science</h3></a></td>
+<td><a class = "iframe" href="mech.html"><span class="icon major fa fa-gears accent4"></span><h3>Mechanical</h3></a></td>
+<td><a class = "iframe" href="meta.html"><span class="icon major fa fa-filter accent3"></span><h3>Metallurgical</h3></a></td>
+<td><a class = "iframe" href="mchem.html"><span class="icon major fa fa-flask accent2"></span><h3>Msc. Chemistry</h3></a></td>
+</tr>
+</table>
+
 						<p>  	This site is meant for you, the future entrants into the IITs, to get an idea of what the different branches actually do and what engineering/sciences really involve. 
               	We, the students of IIT Bombay, have prepared this material describing the programmes offered at IIT Bombay based on our experience here. 
               	The description of each  programme is focused on how it is structured at IIT Bombay and the nature of similar programmes offered at other colleges might be different. 
@@ -106,7 +142,23 @@
               <br>		<br> Humble Appeal :
 		Countless students have fallen bait to the practice of blindly following the cutoffs of the previous years and ended up hating the branch that they choose. 
 		We hope YOU, the future IITian will make judicious use of this first time initiative and make an informed choice.</p>
-						
+					
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	
 					</div>
 
 
@@ -392,6 +444,7 @@ The NCC final exams are held in the month of February. It is a written exam of t
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.colorbox.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/jquery.scrollgress.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
@@ -402,7 +455,8 @@ The NCC final exams are held in the month of February. It is a written exam of t
 var validId = 0;
 $(document).ready(function(){
 var param1var = getQueryVariable("id");
-
+$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+});
 
 function getQueryVariable(variable) {
   var query = window.location.search.substring(1);
@@ -421,7 +475,7 @@ console.log(validId);
 	$("#intro").fadeIn(1500,'linear');
 }
 }
-});
+
 
 
 function showContent(id) {
