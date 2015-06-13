@@ -31,7 +31,7 @@
 								
 								</ul>
 							</li>
-														<li>
+							<li>
 								<a href="acads.html" class="icon fa-angle-down">Academics</a>
 								<ul>
 									<li><a href="acads.html?id=intro">Introduction</a></li>
@@ -54,32 +54,26 @@
 								</ul>
 							</li>
 							<li>
-								<a href="#" class="icon fa-angle-down">Hostels & Infrastructure</a>
+								<a href="hostels.html" class="icon fa-angle-down">Hostels and Infrastructure</a>
 								<ul>
-									<li><a href="generic.html">Generic</a></li>
-									<li><a href="contact.html">Contact</a></li>
-									<li><a href="elements.html">About Us</a></li>
-									<li>
-										<a href="#">Submenu</a>
-										<ul>
-											<li><a href="#">Option One</a></li>
-											<li><a href="#">Option Two</a></li>
-											<li><a href="#">Option Three</a></li>
-											<li><a href="#">Option Four</a></li>
-										</ul>
-									</li>
+									<li><a href="hostels.html?id=intro">Introduction</a></li>
+									<li><a href="hostels.html?id=allot">Facilities</a></li>
+									<li><a href="hostels.html?id=cult">Culture</a></li>
+									<li><a href="hostels.html?id=comp">Computer Usage</a></li>
+									<li><a href="hostels.html?id=in">In & Around @ IITB</a></li>
+									<li><a href="hostels.html?id=acco">Accomodation</a></li>
+									<li><a href="hostels.html?id=med">Medical Facilities</a></li>
+								
 								</ul>
 							</li>
 							<li>
-								<a href="#" class="icon fa-angle-down">Extra Curriculars</a>
+								<a href="extra.html" class="icon fa-angle-down">Extra Curriculars</a>
 								<ul>
-									<li><a href="#">Introduction</a></li>
-									<li><a href="#">Important Dates</a></li>
-									<li><a href="#">Letter to Parents</a></li>
-									<li><a href="#">What to Bring</a></li>
-									<li><a href="#">Important Documents</a></li>
-									<li><a href="#">Orientation Schedule</a></li>
-									<li><a href="#">Scholarships</a></li>
+									<li><a href="extra.html?id=intro">Introduction</a></li>
+									<li><a href="extra.html?id=cult">Cultural</a></li>
+									<li><a href="extra.html?id=med">Media</a></li>
+									<li><a href="extra.html?id=sports">Sports</a></li>
+									<li><a href="extra.html?id=tech">Tech</a></li>
 								
 								</ul>
 							</li>
@@ -94,8 +88,8 @@
 					<p id = "tagLine">A helping hand on your Road to Success...
 </p></div><br><br>
 					<ul class="actions">
-						<li><a href="#" class="button special">Choosing your Department</a></li>
-						<li><a href="#" class="button">Learn More</a></li>
+						<li><a href="acads.html?id=dept" class="button special">Choosing your Department</a></li>
+						<li><a href="#main" class="button">Learn More</a></li>
 					</ul>
 				</section>
 
@@ -146,7 +140,7 @@
 								<h3>The ISMP Team</h3>
 								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
 								<ul class="actions">
-									<li><a href="#" class="button alt">Learn More</a></li>
+									<li><a href="about.html" class="button alt">Learn More</a></li>
 								</ul>
 							</section>
 					
@@ -185,6 +179,23 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+<script>
+jQuery(document).ready(function ($) {
+$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top - 50
+        }, 1000);
+        return false;
+      }
+    }
+});
+});
+	
+</script>
 
 	</body>
 </html>
