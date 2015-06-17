@@ -1800,7 +1800,7 @@ overflow-y: scroll;
 	}
 
 	body, input, select, textarea {
-		color: #3C3B3B;
+		color: #000;
 		font-family: "Source Sans Pro", sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
@@ -1986,7 +1986,7 @@ overflow-y: scroll;
 		header.major p {
 			display: inline-block;
 			border-top: solid 2px #e5e5e5;
-			color: #3C3B3B;
+			color: #000;
 			margin: 1.5em 0 0 0;
 			padding: 1.5em 0 0 0;
 			font-style: normal;
