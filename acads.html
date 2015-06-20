@@ -17,15 +17,19 @@
 		<link rel="stylesheet" href="assets/css/data.css" />
 	<link rel="stylesheet" href="assets/css/colorbox.css" />
 <style>
-		 table tbody tr {
-			border: solid 1px #fff;
-			border-left: 0;
-			border-right: 0;
-		}
 
-			 table tbody tr:nth-child(2n + 1) {
-				background-color: #fff;
-			}
+      .nostyle table, .nostyle caption, .nostyle tbody, .nostyle tfoot, .nostyle thead, .nostyle tr, .nostyle th, .nostyle td {
+          margin: 0;
+          padding: 0;
+          border: 0;
+          outline: 0;
+          font-size: 100%;
+          vertical-align: baseline;
+	  text-align:center;
+          background: transparent;
+	  background-color: #fff;
+        }
+	
  a:hover span.icon {
    
 cursor:pointer;
@@ -146,8 +150,8 @@ cursor:pointer;
 						
 						<h3>Choosing your Department</h3>
 <br>
-<div id=deptTable>
-<table style="text-align:center; background-color:#fff;" >
+<div class=nostyle>
+<table >
 <tr>
 <td><a class = "iframe" href="aero.html"><span class="icon major fa fa-rocket accent2"></span><h3>Aerospace Engineering</h3></a></td>
 <td><a class = "iframe" href="chemical.html"><span class="icon major fa fa-flask accent3"></span><h3>Chemical Engineering</h3></a></td>
@@ -380,14 +384,18 @@ For theory courses, 6 credits mean that you are expected to devote 6 hours per w
 						<br>Cases of academic dishonesty are dealt with seriousness. Disciplinary Action will be taken against students who are found to violate the code by the Academic Disciplinary Action Committee (ADAC) depending on the severity of the act of the malpractice. Here are some acts of malpractice and the
 indicative punishments that may be imposed <br>
 <div class="table-wrapper">
-					<table><tbody>
-<tr> 
-<td><b>Offence</b></dr></td></dr></td><td><b>Punishment</b></td> 
-</tr>
+					<table class = "alt"><tbody>
 
+<thead>
 <tr> 
-<td><b>Impersonation/Forging Signatures</b></td> 
+<th><h3>Offence</h3></th><th><h3>Punishment</h3></th> 
 </tr>
+</thead>
+<thead>
+<tr>
+<th><b>Impersonation/Forging Signatures</b></th> 
+</tr>
+</thead>
 <tr> 
 <td>Signing for another student in class (proxy)</dr></td></dr></td><td>DX (Student will be asked to repeat the course)</td> 
 </tr>
@@ -404,9 +412,13 @@ indicative punishments that may be imposed <br>
 <td>Forging signatures of a faculty/staff member</td></dr></td><td>Suspension for year</td> 
 </tr>
 
-<tr> 
-<td><b>Copying in Homes Assignments/ Programming Assignments/ Laboratory Projects etc</b></td> 
+
+<thead>
+<tr>
+
+<th><b>Copying in Homes Assignments/ Programming Assignments/ Laboratory Projects etc.</b></th> 
 </tr>
+</thead>
 <tr> 
 <td>Student found copying</dr></td></dr></td><td>Zero in Assignment + Grade Penalty</td> 
 </tr>
@@ -437,9 +449,11 @@ indicative punishments that may be imposed <br>
 <td><b>Repeat Offences</b></td><td>Suspension for one semester + 200 hours of community work</td>  
 </tr>
 
+<thead>
 <tr> 
-<td><b>Plagiarism in Internal Reports</b></td>
+<th><b>Plagiarism in Internal Reports</b></th>
 </tr>
+</thead>
 <tr> 
 <td>Reproducing material in seminar reports without proper citation</dr></td></dr></td><td>Could range from warning to loss of two grades</td> 
 </tr>

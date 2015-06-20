@@ -2561,9 +2561,9 @@ overflow-y: scroll;
 
 		table th {
 			color: #646464;
-			font-size: 0.9em;
+			font-size: 1.0em;
 			font-weight: 300;
-			padding: 0 0.75em 0.75em 0.75em;
+			padding: 10px;
 			text-align: left;
 		}
 
